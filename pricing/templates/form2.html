@@ -3,10 +3,15 @@
 
 <h1>Расчет поездки</h1>
 <p>Дата поездки: {{ route_date }}</p>
-<p>Класс ТС {{ bus_class }}</p>
-<p>Расстояние до конечной точки {{ distance }}</p>
-<p>Тариф {{ rate }}</p>
-<p>Стоимость {{ price }}</p>
+<p>Класс ТС: {{ vihicle_class }}</p>
+<p>Тариф за пробег {{ milage }} км: {{ milage_cost }} </p>
+<p>Почасовой тариф за {{ duration }} часов: {{ duration_cost }}</p>
+<p>Тариф за подачу ТС: {{ delivery_cost }}</p>
+<p>Проживание водителей: {{ accomodation }}</p>
+<p>Командировочные: {{ drivers_fee }}</p>
+<p>Наценка/скидка: {{ extra }}%</p>
+<h3>Итого стоимость поездки: {{ full_cost }}</h3>
+
 
 <p><a href="{% url 'show_form' %}">Новый расчет</a></p></p>
 {% endblock %}
