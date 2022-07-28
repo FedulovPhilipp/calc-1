@@ -1,16 +1,16 @@
 <!DOCTYPE HTML>
 {% block content %}
 
-    <h1>Renew: </h1>
-    <p>Borrower: </p>
+<h1>Расчет поездки</h1>
 
 
-    <form action="form1" method="post">
-        {% csrf_token %}
-        <table>
-        {{ form }}
-        </table>
-        <input type="submit" value="Submit" />
-    </form>
+
+<form action="form1" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form }}
+    </table>
+    <input type="submit" value="Submit" />
+</form>
 
 {% endblock %}

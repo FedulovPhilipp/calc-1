@@ -1,10 +1,12 @@
 <!DOCTYPE HTML>
 {% block content %}
 
-    <h1>Renew: </h1>
-    <p>Borrower: </p>
+<h1>Расчет поездки</h1>
+<p>Дата поездки: {{ route_date }}</p>
+<p>Класс ТС {{ bus_class }}</p>
+<p>Расстояние до конечной точки {{ distance }}</p>
+<p>Тариф {{ rate }}</p>
+<p>Стоимость {{ price }}</p>
 
-
-
-
+<p><a href="{% url 'show_form' %}">Новый расчет</a></p></p>
 {% endblock %}
