@@ -2,15 +2,16 @@
 {% block content %}
 
 <h1>Расчет поездки</h1>
+<p>Заказ: {{ description }}</p>
 <p>Дата поездки: {{ route_date }}</p>
 <p>Класс ТС: {{ vihicle_class }}</p>
-<p>Тариф за пробег {{ milage }} км: {{ milage_cost }} </p>
-<p>Почасовой тариф за {{ duration }} часов: {{ duration_cost }}</p>
-<p>Тариф за подачу ТС: {{ delivery_cost }}</p>
-<p>Проживание водителей: {{ accomodation }}</p>
-<p>Командировочные: {{ drivers_fee }}</p>
+<p>Тариф за пробег {{ milage }} км: {{ milage_cost }} рублей</p>
+<p>Почасовой тариф за {{ duration }} часов: {{ duration_cost }} рублей</p>
+<p>Тариф за подачу ТС: {{ delivery_cost }} рублей</p>
+<p>Проживание водителей: {{ accomodation }} рублей</p>
+<p>Командировочные водителей: {{ drivers_fee }} рублей</p>
 <p>Наценка/скидка: {{ extra }}%</p>
-<h3>Итого стоимость поездки: {{ full_cost }}</h3>
+<h3>Итого стоимость поездки: {{ full_cost }} рублей</h3>
 
 
 <p><a href="{% url 'show_form' %}">Новый расчет</a></p></p>
