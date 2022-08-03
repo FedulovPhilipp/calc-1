@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+{% block content %}
+
+<h1>Расчет поездки</h1>
+<p>Дата поездки: {{ route_date }}</p>
+
+<h3>КС: {{ ks }}</h3>
+
+
+<p><a href="{% url 'show_ks' %}">Новый расчет</a></p></p>
+{% endblock %}
